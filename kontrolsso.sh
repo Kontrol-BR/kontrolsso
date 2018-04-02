@@ -49,8 +49,8 @@ mkdir -p /var/db/samba4/winbindd_privileged
 chown -R :proxy /var/db/samba4/winbindd_privileged
 chmod -R 0750 /var/db/samba4/winbindd_privileged
 
-#fetch -o /usr/local/pkg -q https://raw.githubusercontent.com/kontrolsecurity/kontrolsso/2.4.3-SAMBA4/samba.inc
-#fetch -o /usr/local/pkg -q https://raw.githubusercontent.com/kontrolsecurity/kontrolsso/2.4.3-SAMBA4/samba.xml
+fetch -o /usr/local/pkg -q https://raw.githubusercontent.com/kontrolsecurity/kontrolsso/2.4.3-SAMBA4/samba.inc
+fetch -o /usr/local/pkg -q https://raw.githubusercontent.com/kontrolsecurity/kontrolsso/2.4.3-SAMBA4/samba.xml
 
 /usr/local/sbin/pfSsh.php <<EOF
 \$samba = false;
@@ -93,9 +93,9 @@ if [ ! "$(/usr/sbin/pkg info | grep Kontrol-pkg-squid)" ]; then
 	/usr/sbin/pkg install -r Kontrol Kontrol-pkg-squid
 fi
 
-#cd /usr/local/pkg
-#fetch -o - -q https://raw.githubusercontent.com/kontrolsecurity/kontrolsso/2.4.3-SAMBA4/squid_winbind_auth.patch | patch -b -p0 -f
-#fetch -o /usr/local/pkg -q https://raw.githubusercontent.com/kontrolsecurity/kontrolsso/2.4.3-SAMBA4/squid.inc
+cd /usr/local/pkg
+fetch -o - -q https://raw.githubusercontent.com/kontrolsecurity/kontrolsso/2.4.3-SAMBA4/squid_winbind_auth.patch | patch -b -p0 -f
+fetch -o /usr/local/pkg -q https://raw.githubusercontent.com/kontrolsecurity/kontrolsso/2.4.3-SAMBA4/squid.inc
 
 #if [ ! -f "/usr/local/etc/smb4.conf" ]; then
 #	touch /usr/local/etc/smb4.conf
