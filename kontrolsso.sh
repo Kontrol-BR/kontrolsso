@@ -25,13 +25,19 @@ EOF
 /usr/sbin/pkg unlock pkg
 /usr/sbin/pkg unlock Kontrol-2.4.3
 
+
+rm -rf /usr/local/etc/pkg/repos/kontrolsso.conf
+/usr/sbin/pkg update
+
+
 echo "Setting Winbind Permissions"
 mkdir -p /var/db/samba4/winbindd_privileged
 chown root:proxy /var/db/samba4/winbindd_privileged
 chmod -R 0750 /var/db/samba4/winbindd_privileged
+echo
 echo "Done!"
 echo
-echo
+
 
 cp -f /usr/local/bin/ntlm_auth /usr/local/libexec/squid/ntlm_auth
 
