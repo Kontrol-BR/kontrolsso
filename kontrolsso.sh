@@ -28,7 +28,7 @@ EOF
 /usr/sbin/pkg update
 
 mkdir -p /var/db/samba4/winbindd_privileged
-chown -R :proxy /var/db/samba4/winbindd_privileged
+chown -R :squid /var/db/samba4/winbindd_privileged
 chmod -R 0750 /var/db/samba4/winbindd_privileged
 
 cp -f /usr/local/bin/ntlm_auth /usr/local/libexec/squid/ntlm_auth
