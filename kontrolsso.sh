@@ -27,7 +27,7 @@ EOF
 
 echo "Setting Winbind Permissions"
 mkdir -p /var/db/samba4/winbindd_privileged
-chown root:proxy /var/db/samba4/winbindd_*
+chown root:proxy /var/db/samba4/winbindd_privileged
 chmod -R 0750 /var/db/samba4/winbindd_privileged
 echo "Done!"
 echo
