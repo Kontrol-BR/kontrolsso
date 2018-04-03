@@ -34,21 +34,7 @@ echo "Setting Winbind Permissions"
 mkdir -p /var/db/samba4/winbindd_privileged
 chown root:proxy /var/db/samba4/winbindd_privileged
 chmod -R 0750 /var/db/samba4/winbindd_privileged
-echo
-echo "Done!"
-echo
-
-
-cp -f /usr/local/bin/ntlm_auth /usr/local/libexec/squid/ntlm_auth
 
 /etc/rc.d/ldconfig restart
 
-echo "Restarting SMB/WINBIND Services!"
-/usr/local/etc/rc.d/samba_server restart
 echo "Done!"
-echo
-echo
-echo "************************"
-echo " Kontrol SSO Installed! "
-echo "************************"
-echo
