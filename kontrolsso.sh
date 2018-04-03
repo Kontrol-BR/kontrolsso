@@ -35,4 +35,8 @@ cp -f /usr/local/bin/ntlm_auth /usr/local/libexec/squid/ntlm_auth
 
 /etc/rc.d/ldconfig restart
 
-echo  "Kontrol SSO Installed"
+/usr/local/etc/rc.d/samba_server restart
+
+echo "************************"
+echo  " Kontrol SSO Installed! "
+echo "************************"
