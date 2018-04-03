@@ -39,9 +39,10 @@ cp -f /usr/local/bin/ntlm_auth /usr/local/libexec/squid/ntlm_auth
 
 echo "Restarting SMB/WINBIND Services!"
 /usr/local/etc/rc.d/samba_server restart
-echo "Done!""
+echo "Done!"
 echo
 echo
 echo "************************"
-echo  " Kontrol SSO Installed! "
+echo " Kontrol SSO Installed! "
 echo "************************"
+echo
