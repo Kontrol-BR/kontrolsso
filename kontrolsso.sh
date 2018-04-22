@@ -12,7 +12,7 @@
 
 cat <<EOF > /usr/local/etc/pkg/repos/kontrolsso.conf
 kontrolsso: {
-    url: "https://github.com/kontrolsecurity/packages/raw/11.1",
+    url: "https://github.com/kontrol-br/packages/raw/11.1",
     mirror_type: "https",
     enabled: yes
 }
