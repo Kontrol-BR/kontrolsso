@@ -19,8 +19,8 @@ kontrolsso: {
 EOF
 
 /usr/sbin/pkg update -r kontrolsso
-#/usr/sbin/pkg install -r kontrolsso net/samba44 2> /dev/null
-/usr/sbin/pkg install -y -r kontrolsso net/samba44
+/usr/sbin/pkg install -r kontrolsso net/samba44 2> /dev/null
+#/usr/sbin/pkg install -y -r kontrolsso net/samba44
 
 /usr/sbin/pkg unlock pkg
 /usr/sbin/pkg unlock Kontrol-2.4.3
